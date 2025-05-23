@@ -81,3 +81,5 @@ new OneToHundredStream().pipe(new InverseNumberStream()).pipe(new MultiplyByTenS
 // Buffer = transitar dados em uma stream
 // Chunk = pedaço dos dados em uma stream
 
+// Fetch API - permite que você busque (fetch) dados de servidores usando requisições HTTP/HTTPS, de forma simples e baseada em promises
+// permite fazer requisições de uma aplicação p outra, endereço p outro, front end p back end, back end p outro back end
