@@ -15,8 +15,11 @@ class OneToHundredStream extends Readable {
     }
 }
 
-fetch('http://localhost:3334', {
+const response = await fetch('http://localhost:3334', {
     method: 'POST',
     body: new OneToHundredStream(),
     duplex: 'half'
-})
+  });
+  
+  const data = await response.text();
+  console.log(data);
